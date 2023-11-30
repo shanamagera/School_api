@@ -20,7 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/create-course', [CourseController::class, 'createCourse']);
-Route::get('/getCourses', [CourseController::class, 'reallAllCourses']);
+Route::get('/getCourses', [CourseController::class, 'readAllCourses']);
 Route::get('/getCourse', [CourseController::class, 'readCourse']);
 Route::post('/updateCourse', [CourseController::class, 'updateCourse']);
 Route::post('/deleteCourse', [CourseController::class, 'deleteCourse']);
